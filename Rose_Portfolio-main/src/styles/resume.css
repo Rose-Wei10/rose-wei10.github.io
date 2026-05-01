@@ -1,0 +1,346 @@
+/* src/styles/resume.css */
+.resume-background {
+    background: linear-gradient(135deg, #174181, #217fb5, #24bdca);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 0;
+    color: white;
+  }
+
+  .resume-inner-container {
+
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .resume-title {
+    text-align: center;
+    color: white !important;
+    margin-bottom: 3rem !important;
+    position: relative;
+    font-size: 2.5rem !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resume-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #108ee9, #87d068);
+    margin: 1rem auto 0;
+    border-radius: 3px;
+  }
+  
+  .skills-main-title {
+    text-align: center;
+    color: white !important;
+    margin: 4rem 0 3rem !important;
+    position: relative;
+    font-size: 2.5rem !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skills-main-title::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #108ee9, #87d068);
+    margin: 1rem auto 0;
+    border-radius: 3px;
+  }
+  
+  .education-content {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .skills-content {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Education Section */
+  .education-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+  
+  .education-section.animate-in {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .education-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .education-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #108ee9;
+    background: rgba(16, 142, 233, 0.1);
+    padding: 0.75rem;
+    border-radius: 50%;
+  }
+  
+  .education-title {
+    color: white !important;
+    margin: 0 !important;
+  }
+  
+  .university-name {
+    color: white !important;
+    font-size: 1.3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .education-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .education-degree {
+    font-weight: 500;
+    color: #e6f7ff;
+  }
+  
+  .education-years {
+    color: #87d068;
+    font-weight: 500;
+  }
+  
+  .education-description {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.95rem;
+  }
+  
+  .education-timeline {
+    color: white !important;
+  }
+  
+  /* Override any Ant Design card styling */
+  .ant-card {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+  }
+  
+  .ant-card-head {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+  }
+  
+  .ant-card-head-title {
+    color: white !important;
+  }
+  
+  /* Custom Timeline Styling */
+  .education-timeline .ant-timeline-item-tail {
+    border-left: 2px solid rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  .education-timeline .ant-timeline-item-head {
+    background-color: #108ee9 !important;
+    border-color: #108ee9 !important;
+  }
+  
+  .education-item {
+    padding-bottom: 1.5rem;
+  }
+  
+  /* Skills Section */
+  .skill-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.8s ease;
+    height: 100%;
+  }
+  
+  .skill-section.animate-in {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .skill-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #87d068;
+    background: rgba(135, 208, 104, 0.1);
+    padding: 0.75rem;
+    border-radius: 50%;
+  }
+  
+  .skill-title {
+    color: white !important;
+    margin: 0 !important;
+  }
+  
+  .skill-grid {
+    margin: 0 -0.5rem;
+  }
+  
+  .skill-item {
+    margin-bottom: 1.25rem;
+    padding: 0 0.5rem;
+    transform: translateX(-20px);
+    opacity: 0;
+    animation-name: slideInRight;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-name {
+    font-weight: 500;
+    color: #e6f7ff;
+  }
+  
+  .skill-level {
+    color: #87d068;
+    font-weight: 500;
+  }
+  
+  .skill-bar-container {
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .skill-bar-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 4px;
+    transition: width 1s ease;
+  }
+  
+  /* Animated Background Elements */
+  .animated-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  }
+  
+  .circle-1 {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    left: -100px;
+    animation: float 20s infinite ease-in-out;
+  }
+  
+  .circle-2 {
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    right: -100px;
+    animation: float 15s infinite ease-in-out reverse;
+  }
+  
+  .circle-3 {
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    left: 50%;
+    animation: float 25s infinite ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(50px, 50px);
+    }
+    50% {
+      transform: translate(0, 100px);
+    }
+    75% {
+      transform: translate(-50px, 50px);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .resume-title,
+    .skills-main-title {
+      font-size: 2rem !important;
+    }
+    
+    .education-section,
+    .skill-section {
+      padding: 1.5rem;
+    }
+    
+    .skill-grid {
+      margin: 0;
+    }
+  }
