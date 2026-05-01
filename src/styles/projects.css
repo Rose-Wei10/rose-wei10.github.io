@@ -1,0 +1,424 @@
+/* src/styles/projects.css */
+
+.projects-background {
+  background: linear-gradient(135deg, #174181, #217fb5, #24bdca);
+  padding: 6rem 0;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.projects-title {
+  text-align: center;
+  color: white !important;
+  margin-bottom: 4rem !important;
+  font-size: 2.5rem !important;
+  position: relative;
+}
+
+.projects-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #24bdca, #ffffff);
+  margin: 1rem auto 0;
+  border-radius: 3px;
+}
+
+/* Carousel styling */
+.carousel-container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.projects-carousel {
+  padding-bottom: 3rem;
+}
+
+.projects-carousel .slick-dots {
+  bottom: 1rem;
+}
+
+/* Change dot styling to create a blue line effect */
+.projects-carousel .slick-dots li {
+  margin: 0 4px;
+  padding: 0;
+}
+
+.projects-carousel .slick-dots li button {
+  height: 3px;
+  width: 30px;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0;
+  border: none;
+}
+
+.projects-carousel .slick-dots li.slick-active button {
+  background: #24bdca;
+  opacity: 1;
+}
+
+/* Hide the default pseudo element */
+.projects-carousel .slick-dots li button:before {
+  display: none;
+}
+
+.carousel-slide {
+  padding: 10px;
+}
+
+/* Project card styling */
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: none !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transform: translateY(0);
+  opacity: 1;
+  animation: projectFadeIn 0.8s forwards;
+  margin: 0 auto;
+  max-width: 800px; /* Reduced max-width to make cards more compact */
+  background-color: white !important;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Image container */
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 280px; /* Reduced height to make it more compact */
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Changed from cover to contain */
+  transition: transform 0.5s ease;
+  background-color: #174181; /* Changed to match the theme color */
+  padding: 10px; /* Add some padding around the image */
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+/* Project overlay */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)); /* Reduced opacity */
+  z-index: 5;
+  pointer-events: none; /* Make sure the overlay doesn't block clicks */
+}
+
+/* Image Gallery Styling */
+.image-gallery-carousel {
+  height: 100%;
+}
+
+.gallery-image-wrapper {
+  height: 280px; /* Match the container height */
+}
+
+.image-gallery-carousel .slick-dots {
+  bottom: 10px;
+  z-index: 10;
+}
+
+.image-gallery-carousel .slick-dots li button {
+  background: rgba(255, 255, 255, 0.5);
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.image-gallery-carousel .slick-dots li.slick-active button {
+  background: white;
+}
+
+.image-gallery-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10; /* Increased z-index to ensure buttons are above the overlay */
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.gallery-control-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0.7;
+  pointer-events: auto;
+}
+
+.gallery-control-button:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Card content */
+.ant-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px !important; /* Reduced padding */
+}
+
+.project-card-title {
+  font-size: 1.6rem !important; /* Slightly reduced */
+  margin-bottom: 0.5rem !important;
+  color: #174181 !important;
+  font-weight: 600 !important;
+}
+
+.project-card-subtitle {
+  font-size: 1rem !important; /* Reduced size */
+  color: #217fb5 !important;
+  margin-bottom: 1rem !important; /* Reduced margin */
+  font-weight: 500 !important;
+  font-style: italic;
+}
+
+.project-description-list {
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.project-card-description-item {
+  color: #555 !important;
+  margin-bottom: 0.5rem !important; /* Reduced */
+  line-height: 1.5 !important; /* Slightly reduced */
+  padding-left: 0.5rem;
+}
+
+/* Highlight technologies */
+.project-card-description-item strong {
+  color: #24bdca;
+  font-weight: 600;
+}
+
+/* Tags */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem; /* Reduced */
+}
+
+.project-tag {
+  background: linear-gradient(135deg, #174181, #217fb5) !important;
+  color: white !important;
+  border: none !important;
+  margin: 0.25rem !important;
+  padding: 0.25rem 0.75rem !important;
+  border-radius: 20px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-tag:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.github-button {
+  background: #174181 !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease !important;
+}
+
+.github-button:hover {
+  background: #0d2c5d !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.demo-button {
+  background: white !important;
+  color: #217fb5 !important;
+  border: 1px solid #217fb5 !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease !important;
+}
+
+.demo-button:hover {
+  background: #217fb5 !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Decorative elements */
+.projects-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.circle-decoration {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(23, 65, 129, 0.1) 0%, rgba(23, 65, 129, 0) 70%);
+  top: -100px;
+  right: -100px;
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(36, 189, 202, 0.1) 0%, rgba(36, 189, 202, 0) 70%);
+  bottom: -50px;
+  left: -50px;
+}
+
+/* Animation */
+@keyframes projectFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2rem !important;
+  }
+  
+  .project-card-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .project-card-subtitle {
+    font-size: 1rem !important;
+  }
+  
+  .project-image-container {
+    height: 250px; /* Reduced for mobile but still taller than original */
+  }
+  
+  .gallery-image-wrapper {
+    height: 250px; /* Match the container height for mobile */
+  }
+  
+  .project-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .gallery-control-button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Horizontal scroll layout */
+.projects-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2rem 0;
+}
+
+.projects-inline {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* Each project card size matches image */
+.project-card {
+  flex: 0 0 auto;
+  width: fit-content !important;
+  max-width: 800px;
+  margin: 0;
+}
+
+/* Keep image ratio and prevent stretching */
+.project-image-container {
+  position: relative;
+  width: 800px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background-color: #174181;
+  padding: 10px;
+}
+
+/* Hide scrollbar but keep scrollable behavior */
+.projects-scroll-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(36, 189, 202, 0.5);
+  border-radius: 5px;
+}
+
+.projects-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(36, 189, 202, 0.8);
+}

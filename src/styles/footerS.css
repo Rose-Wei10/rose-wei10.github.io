@@ -1,0 +1,90 @@
+/* Footer styles */
+.footer {
+    background: #1a1a1a;
+    padding: 2rem 0;
+    color: white;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .footer-logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .footer-center {
+    text-align: center;
+  }
+  
+  .copyright {
+    color: #c5c5c5;
+  }
+  
+  .heart-icon {
+    color: #ff5c5c;
+    margin: 0 0.25rem;
+  }
+  
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .footer-icon {
+    font-size: 1.5rem;
+    color: #c5c5c5;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icon:hover {
+    color: white;
+  }
+  
+  .scroll-top-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .scroll-top-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-background {
+      padding: 3rem 0;
+    }
+  
+    .contact-info-card, 
+    .contact-form-card {
+      margin-bottom: 1.5rem;
+    }
+  
+    .footer-logo,
+    .footer-center,
+    .footer-right {
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  }
