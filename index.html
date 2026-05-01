@@ -3,48 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rose Wei</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Rong Wei</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Rose Wei</h1>
-    <p>Software Engineer • Student • Builder</p>
-  </header>
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <h1 class="logo">Rong Wei</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate developer focused on building clean, scalable, and user-friendly applications.
-    </p>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Hello, I'm</h2>
+    <h1>Rong Wei</h1>
+    <p>Full Stack Developer | CS @ UIUC</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </div>
+</section>
 
-  <section>
-    <h2>Education</h2>
-    <p><strong>Your University</strong> — Degree, Year</p>
-  </section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    Full-stack developer based in Washington. Passionate about building scalable web apps,
+    AI systems, and data-driven platforms.
+  </p>
+</section>
 
-  <section>
-    <h2>Experience</h2>
+<!-- EDUCATION -->
+<section id="education" class="section alt">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>UIUC</h3>
+    <p>MS in Computer Science (2025–Present)</p>
+  </div>
+  <div class="card">
+    <h3>Western Washington University</h3>
+    <p>BS Computer Science | GPA: 3.61</p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>TradingFlow</h3>
+    <span>Full Stack Developer (2024–2025)</span>
+    <ul>
+      <li>Built options data platform using Next.js + Stripe</li>
+      <li>Optimized backend with Clickhouse</li>
+      <li>Boosted engagement by 30%</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section alt">
+  <h2>Projects</h2>
+
+  <div class="grid">
     <div class="card">
-      <h3>Company Name</h3>
-      <p>Role • Dates</p>
-      <p>Short description of what you did.</p>
+      <h3>MedMod</h3>
+      <p>Multimodal ML pipeline with PyTorch</p>
     </div>
-  </section>
 
-  <section>
-    <h2>Projects</h2>
     <div class="card">
-      <h3>Project Name</h3>
-      <p>Short description of your project.</p>
+      <h3>Academic Dashboard</h3>
+      <p>Multi-database analytics platform</p>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2026 Rose Wei</p>
-  </footer>
+    <div class="card">
+      <h3>Dictionary App</h3>
+      <p>React Native mobile app</p>
+    </div>
+  </div>
+</section>
 
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skill">
+    <p>JavaScript</p>
+    <div class="bar"><div style="width:90%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>Python</p>
+    <div class="bar"><div style="width:85%"></div></div>
+  </div>
+
+  <div class="skill">
+    <p>React / Next.js</p>
+    <div class="bar"><div style="width:80%"></div></div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Rong Wei</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
