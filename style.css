@@ -1,0 +1,44 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+  color: #222;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
